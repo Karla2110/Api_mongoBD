@@ -29,7 +29,7 @@
                 <div class="row align-items-top">
                     <div class="col">
                         <form action="/add" method="POST">
-                          <div class="mb-3">
+                        <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                             <input type="text" class="form-control"  placeholder="Example: Juan Perez" name="nom">
                         </div>
@@ -37,40 +37,63 @@
                             <label class="form-label">Edad</label>
                             <input type="text" class="form-control" placeholder="Example: 26" name="age">
                         </div>
-                            <div class="mb-3">
-                                <label class="form-label">Temperatura (°C)</label>
-                                <input type="text" class="form-control" id="cajatemp" placeholder="Example: 32" name="tem">
-                            </div>
-                            <div class="mb-3">
-                                <label  class="form-label">Pulsos por minuto (pm)</label>
-                                <input type="text" class="form-control" id="cajapul" placeholder="Example: 96" name="pul">
-                            </div>
-                            <div class="mb-3">
-                                <label  class="form-label">Fecha de registro</label>
-                                <input type="date" class="form-control" id="cajafecha" placeholder="dd/mm/aaaa" name="fecha">
-                            </div>
-                            <button class="btn btn-primary">Guardar datos</button>
+                        <div class="mb-3">
+                            <label class="form-label">Temperatura (°C)</label>
+                            <input type="text" class="form-control" id="cajatemp" placeholder="Example: 32" name="tem">
+                        </div>
+                        <div class="mb-3">
+                            <label  class="form-label">Pulsos por minuto (pm)</label>
+                            <input type="text" class="form-control" id="cajapul" placeholder="Example: 96" name="pul">
+                        </div>
+                        <div class="mb-3">
+                            <label  class="form-label">Fecha de registro</label>
+                            <input type="date" class="form-control" id="cajafecha" placeholder="dd/mm/aaaa" name="fecha">
+                        </div>
+                        <button class="btn btn-primary">Guardar datos</button>
             
                         </form>
                     </div>
-                   
-                    
+   
                     <div class="col">
-                       <div>
-                        <img src="https://www.cora.health/es/guia/content/images/2018/05/puslaciones-normales-infografic.jpg" class="d-block w-100" alt="...">
-                      </div>
 
-                      <div>
-           <br>
-                          <h3>¡Recuerda siempre checar tus signos!</h3>
-                        <h6>Un nivel normal de temperatura esta entre los 35.5°C y 37.8°C </h6>
-                        <h6>Si sobrepasa este nivel puedes tener de fiebre moderada/leve (38°C) </h6>
-                        <h6>hasta hipertermia! (+ 40°C)</h6>
-                      </div>
-                          
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://pbs.twimg.com/media/DPZyHcIX0AgkPQu.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.cora.health/es/guia/content/images/2018/05/puslaciones-normales-infografic.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://cl.buscafs.com/www.sandiegored.com/public/uploads/images/258827/258827.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Atras</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                              </button>
+                        </div>
+                        <div>
+                            <h3>¡Recuerda siempre checar tus signos!</h3>
+                            <p>
+                                <h6>La medición de la frecuencia cardiaca proporciona información importante acerca de la salud 
+                                    cardiovascular de un individuo. De esta manera se puede conocer si el corazón bombea bien la 
+                                    sangre o si tiene alguna anomalía y si es asi, poder actuar a tiempo. </h6>
+                            </p>
+                            
+                        </div>
                     </div>
                 </div>
-            <br>
+<br>
                 <div class="md-5">
                   <table class="table table-striped table-info">
                       <thead>
@@ -103,6 +126,6 @@
           </main>
 
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
