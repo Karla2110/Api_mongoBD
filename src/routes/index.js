@@ -15,7 +15,9 @@ router.get('/', async (req, res)=> {
 router.post('/add', async (req, res)=> {
     const dato = new valores(req.body);
     await dato.save();
-    res.redirect('/');
+    //res.redirect('/');
+    res.json(req.body);
+
 });
 
 module.exports = router;
